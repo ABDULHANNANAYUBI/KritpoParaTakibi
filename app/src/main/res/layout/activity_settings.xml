@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.Settings">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="92dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toTopOf="@+id/language"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setting" />
+
+    <TextView
+        android:id="@+id/language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginBottom="10dp"
+        android:text="Please Select your language"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner"
+        app:layout_constraintStart_toStartOf="@+id/spinner"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="246dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/kur"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/language" />
+
+    <TextView
+        android:id="@+id/kur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="9dp"
+        android:text="Please select your currency"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/lira"
+        app:layout_constraintStart_toStartOf="@+id/lira"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+    <RadioButton
+        android:id="@+id/dolar"
+        android:layout_width="155dp"
+        android:layout_height="48dp"
+        android:layout_marginEnd="69dp"
+        android:text="American Dolar"
+        app:layout_constraintBaseline_toBaselineOf="@+id/lira"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lira" />
+
+    <RadioButton
+        android:id="@+id/lira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="96dp"
+        android:text="Turkish Lira"
+        app:layout_constraintBottom_toTopOf="@+id/RefreshTimeText"
+        app:layout_constraintEnd_toStartOf="@+id/dolar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kur" />
+
+    <TextView
+        android:id="@+id/RefreshTimeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:text="Refresh Time"
+        android:textColor="#000000"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/setRefreshTimeText"
+        app:layout_constraintEnd_toEndOf="@+id/setRefreshTimeText"
+        app:layout_constraintStart_toStartOf="@+id/setRefreshTimeText"
+        app:layout_constraintTop_toBottomOf="@+id/lira" />
+
+    <EditText
+        android:id="@+id/setRefreshTimeText"
+        android:layout_width="192dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="42dp"
+        android:ems="10"
+        android:hint="Enter your refresh time"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/setRefreshTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RefreshTimeText" />
+
+    <Button
+        android:id="@+id/setRefreshTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="18dp"
+        android:text="Set Refresh Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/setRefreshTimeText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
