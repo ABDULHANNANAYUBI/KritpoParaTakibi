@@ -1,0 +1,2 @@
+# Kritpo-Para-Takibi-Uygulamas-
+Projemiz kripto paraları takibini kolaylaştıran ve kullanıcı ara yüzü basit tasarlanmış, kullanıcıların giriş yapıp uygulamadan farklı döviz cinslerinden, farklı dil kullanımı ile kullanabilecekleri bir uygulamadır.  Bu uygulama Retrofit2 API ‘yı kullanılarak geliştirilmiştir. Uygulamamız her 10 saniye de güncel kuru alarak kullanıcılara göstermektedir ve böyle kullanıcılar kripto para takibini kolay bir şekilde yapabilmektedirler. 
